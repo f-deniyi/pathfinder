@@ -1,0 +1,95 @@
+
+body {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)), url('../images/tyler.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(240, 238, 238);
+  height:100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+footer{
+  position:fixed;
+  width: 100%;
+bottom:0%;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.link {
+  font-size: 1.2rem;
+}
+
+.navbar {
+  position: fixed;
+}
+
+form {
+  margin: 1em auto;
+  width: 45%;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 4px;
+  color: white;
+  position:absolute;
+  top:50%;
+  left:50%;
+ transform: translate(-50%,-50%);
+}
+
+input {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  padding: 1.05em;
+  margin-top: 5px;
+  font-size: 1.03em;
+  border: none;
+  border-radius: 2px;
+}
+
+button {
+  padding: 0.85em;
+  border: 2px solid white;
+  border-radius: 7px;
+  color: white;
+  background-color: transparent;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  width:100%;
+}
+
+button:hover{
+  border:2px solid rgba(34, 41, 75, 0.918);
+  background-color: #2D314E;
+  color:white;
+  transition: ease-out 0.5s;
+}
+
+.input-group {
+  margin: 0.65em 0;
+}
+
+.error-feedback {
+  color: rgb(255, 43, 43);
+  font-size: 1.12rem;
+}
+@media(max-width:900px) {
+  form {
+    width: 100%;
+  }
+}
