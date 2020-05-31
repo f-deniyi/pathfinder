@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/handshake.jpg">
+  <link rel="stylesheet" href="./style/main.css" type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <title>PathFinder</title>
+
+
+</head>
+
+<body>
+  <div class='backdrop'>
+    <button class='close'>
+      <p class='first'></p>
+      <p class='second'></p>
+    </button>
+    <div class="hidden-menu">
+      <ul class=''>
+        <li><a href='#job-seekers'>Job Seekers</a></li>
+        <li><a href='#employers'>Employers</a></li>
+        <li><a href='#blog'>Blog</a></li>
+      </ul>
+      <a href="login.html"> <button type='button' class='signin dropdown-button'>Sign in</button></a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="hamburger">
+      <button type="button" class='nav-button'>
+        <div class='first'></div>
+        <div class='second'></div>
+        <div class="third"></div>
+      </button>
+    </div>
+    <div class="nav-brand">
+      <h2><a href='index.html'>PathFinder</a></h2>
+    </div>
+    <div class="nav-menu">
+      <ul class='nav-list'>
+        <li class='nav-item'></li>
+        <li class='nav-item'><a href='#job-seekers'>Job Seekers</a></li>
+        <li class='nav-item'><a href='#employers'>Employers</a></li>
+        <li class='nav-item'><a href='#blog'>Blog</a></li>
+      </ul>
+    </div>
+    <div class='dropdown'>
+      <button type='button' class='signin dropdown-button'>Sign In</button>
+      <div class="dropdown-content">
+        <a href="login.html">Company</a>
+        <a href="login.html">Job Seeker</a>
+        <a href="login.html">Admin</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="home">
+    <div class="home-text">
+      <div>
+        <h1 style='text-align: center'>Recruiter for Employers and Employees</h1>
+      </div>
+      <input type="text" placeholder='Job title, Company...'>
+      <input type="text" placeholder='Location'>
+      <button type='button' class='request-button'>Search &#10140</button>
+      <p>Find the perfect person for your Job</p>
+      <p>Any Skill</p>
+      <p>Any Location</p>
+      <p>Any Experience</p>
+      <a href='register.html'><button type='button' class='request-button'>Create account to access more
+          features</button></a>
+    </div>
+  </div>
+
+  <div class="job-seekers" id='job-seekers'>
+    <div class='resume-section'>
+      <h1>Looking for life changing jobs ? We got you covered</h1>
+      <h3>Upload your Resume or allow our experts to handle your resume</h3>
+      <p>Your resume has the power to open doors, inform the employer your career objectives and what you can offer if
+        hired</p>
+      <button type="button" class='upload'>Upload Resume</button>
+      <button type="button" class='upload'>Allow our experts to build your Resume</button>
+    </div>
+  </div>
+  <div class='browse-jobs'>
+    <h2 class='text-center'>Search for jobs</h2>
+    <div class=' search-by-skills'>
+      <h3>Search by Skills</h3>
+      <div class="skills-container">
+        <button class='bubbles' type='button'>Software Development</button>
+        <button class='bubbles' type='button'>Accounting</button>
+        <button class='bubbles' type='button'>Engineering</button>
+        <button class='bubbles' type='button'>Data Science</button>
+      </div>
+
+    </div>
+    <div class=' search-by-company'>
+      <h3>Search by Company</h3>
+      <div class="company-container">
+        <button class='bubbles' type='button'>IBM</button>
+        <button class='bubbles' type='button'>Huawei</button>
+        <button class='bubbles' type='button'>Apple</button>
+        <button class='bubbles' type='button'>Google</button>
+        <button class='bubbles' type='button'>Andela</button>
+        <button class='bubbles' type='button'>Internshala</button>
+      </div>
+
+    </div>
+    <div class=' search-by-location'>
+      <h3>Search by Location</h3>
+      <div class="location-container">
+        <button class='bubbles' type='button'>India</button>
+        <button class='bubbles' type='button'>China</button>
+        <button class='bubbles' type='button'>USA</button>
+        <button class='bubbles' type='button'>Nigeria</button>
+        <button class='bubbles' type='button'>Brazil</button>
+        <button class='bubbles' type='button'>South Africa</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div id='employers'>
+    <h2>Employer</h2>
+    <p>Find Millions of capable employees that are ready to work for you</p>
+    <button type='button' class='post'>Post a Job</button>
+  </div>
+
+  <div class="blog" id='blog'>
+    <h2 class='text-center'>Latest Articles</h2>
+    <div class="articles">
+      <div class="card">
+        <div class="card-head">
+          <img src="images/image-currency.jpg" height='205' width='100%'>
+        </div>
+        <div class="card-body">
+          <div class="article-text">
+            <p>By Claire Robinson</p>
+            <h2> Receive money in any currency with no fees</h2>
+            <p>The world is getting smaller and we’re becoming more mobile. So why should you be
+              forced to only receive money in a single…<span class='link text-center'>Read Article</span></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <img src="images/image-restaurant.jpg" width='100%'>
+        </div>
+        <div class="card-body">
+          <div class="article-text">
+            <p> By Wilson Hutton</p>
+            <h2>Treat yourself without worrying</h2>
+            <p>Our simple budgeting feature allows you to separate out your spending and set
+              reali
+              stic limits each month. That means you …
+              <span class='link'>Read Article</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <img src="images/image-plane.jpg" width='100%'>
+        </div>
+        <div class="card-body">
+          <div class="article-text">
+            <p> By Wilson Hutton</p>
+            <h2>Take your Easybank card wherever you go</h2>
+            <p>We want you to enjoy your travels. This is why we don’t charge any fees on purchases
+              while you’re abroad. We’ll even show you …
+              <span class='link'>Read Article</span></p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <img src="images/image-confetti.jpg" width='100%'>
+        </div>
+        <div class="card-body"></div>
+        <div class="article-text">
+          <p>By Claire Robinson</p>
+          <h2>Preparing for your interview</h2>
+          <p>After a lot of hard work by the whole team, we’re excited to launch our closed beta.
+            It’s easy to request an invite through the site ...
+            <span class='link'>Read Article</span></p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class='text-center'>
+      <a href='' class='link'>Read More Articles &#9193</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="brand">
+      <h2>PathFinder</h2>
+
+    </div>
+    <div class="footer-first-list">
+      <div class="social">
+        <a href=""><img src='images/icon-facebook.svg'></a>
+        <a href=""><img src='images/icon-instagram.svg'></a>
+        <a href=""><img src='images/icon-twitter.svg'></a>
+        <a href=""><img src='images/icon-pinterest.svg'></a>
+        <a href=""><img src='images/icon-youtube.svg'></a>
+      </div>
+      <p>Coded by <a href="#">F3mmie</a></p>
+    </div>
+
+    </div>
+  </footer>
+  </main>
+  <script src='./script/script.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,517 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0.5em 0;
+}
+
+.signin{
+  padding:0.76em;
+  border: white 2px solid;
+  background-color: transparent;
+  color:white;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size:1.05rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hamburger {
+  display: none;
+}
+
+.nav-button {
+  padding: 1.4em;
+  border: white 3px solid;
+  background-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  margin:0;
+}
+
+.nav-button div {
+  height: 3px;
+  width: 19px;
+  background-color: white;
+  position: absolute;
+  transition: all 0.5s ease;
+  left: 44px;
+}
+.close p{
+  height: 3px;
+  width: 2.5em;
+  background-color: white;
+  position: absolute;
+  top:25%;
+  left:3%;
+}
+.close {
+  background-color: transparent;
+  border:none;
+  position:fixed;
+  top:0%;
+  left:80%;
+  width:19px;
+  height:19px;
+  cursor: pointer;
+  padding:1.3em;
+
+}
+.nav-button .first {
+  top: 23px;
+}
+
+.nav-button .second {
+  top: 33px;
+}
+
+.nav-button .third {
+  top: 43px;
+}
+.close .first {
+  transform: translateY(0px) rotate(47deg);
+  transition: all 1s ease;
+}
+
+.close .second{
+  transform: translateY(0px) rotate(-47deg);
+  transition: all 1s ease;
+}
+.nav-button:hover{
+  border:unset;
+  transition: all 0.3s ease;  
+}
+.navbar {
+  background-color: #2D314E;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.5em 2em;
+  position: fixed;
+  top: 0;
+  order: inherit;
+  width: 100%;
+  z-index: 12;
+}
+.hidden-menu{
+  margin:auto;
+  width:90%;
+  background-color: #2D314E;
+  color:white;
+  top:15%;
+  font-size:1.60em;
+  border-radius:3px;
+  align-items: center;
+  padding-top: 1em;
+
+}
+.hidden-menu .navlist{
+display: inline-block;
+}
+
+.hidden-menu li a{
+  color:white;
+
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.link {
+  color: #4EBAFE;
+  margin-top: 1em;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 1.5em;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.nav-item a:hover {
+  padding-bottom: 6px;
+  border-bottom: solid 2px white;
+}
+.backdrop{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index:40;
+  display:none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0.3%;
+  background-color: #fffefe;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:#2D314E;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom:#2D314E solid 2px;
+  background-color: white;
+  font-weight:bold;
+}
+
+.dropdown-button {
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.request-button {
+  padding: 0.5em;
+  border:2px solid white;
+  border-radius: 7px;
+  color: white;
+  background-color:transparent;
+font-size:0.85em;
+font-weight: bold;
+cursor: pointer;
+}
+.request-button:hover{
+  border:2px solid #2D314E;
+  background-color: #FAFAFA;
+  color:#2D314E;
+  transition: ease-out 0.5s;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 1.03em;
+  font-size: 0.65em;
+  margin-top: 1.3em;
+  width: 35%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.home {
+  background-color: #FAFAFA;
+  background: linear-gradient(rgba(26, 57, 158, 0.4), rgba(66, 13, 189, 0.274)), url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2em;
+  height: 100vh;
+  line-height: 3em;
+}
+
+#employers {
+  background: linear-gradient(to right, rgba(30, 154, 255, 0.685), rgba(14, 28, 94, 0.452)), url('./images/employers.jpg');
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 3em 2em;
+  line-height: 2em;
+  ;
+  height: 35%;
+  color: white;
+}
+
+.post {
+  padding: 0.8em;
+  border: solid 2px rgb(190, 212, 238);
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  color: white;
+}
+
+.post:hover {
+  background-color: white;
+  color: rgb(69, 122, 235);
+  cursor: pointer;
+}
+
+.jobs {
+  padding: 0 2rem 2rem;
+}
+
+.job-board {
+  background-color: white;
+  height: 100vh;
+  ;
+}
+
+.job-card {
+  margin: 1em auto;
+  width: 100%;
+  background-color: rgba(224, 222, 222, 0.055);
+  border-radius: 2px;
+  padding: 0 2em;
+  border-bottom: solid 1px rgba(51, 51, 51, 0.603);
+}
+
+.job-card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: linear 0.5s;
+}
+
+.job-text {
+  padding-top: 1em;
+}
+
+.job-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-image {
+  margin-right: 1.5em;
+}
+
+.languages>li {
+  border-radius: 3px;
+  padding: 0.5em;
+  background-color: #EFF6F5;
+  font-weight: bold;
+  color: #7AA6A4;
+  cursor: pointer;
+}
+
+.languages>li:hover {
+  background-color: #59A3A3;
+  color: white;
+}
+
+#company-name {
+  color: #59A3A3;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+#new {
+  border-radius: 5rem;
+  padding: 0.25rem 0.8em;
+  background-color: #59A3A3;
+  color: white;
+  font-weight: 800;
+}
+
+#featured {
+  border-radius: 5rem;
+  padding: 0.25rem 0.8em;
+  background-color: black;
+  color: white;
+  font-weight: 800;
+}
+
+.other-details {
+  color: #A4A8AA
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.3em;
+}
+
+.home-text {
+  position: relative;
+  top: 30%;
+  text-align: center;
+  color: rgb(250, 250, 250);
+  font-size: 1.5em;
+}
+
+.service {
+  padding: 5em;
+}
+
+.services {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2.4em;
+  align-items: center;
+}
+
+.services>div {
+  width: 100%;
+  margin-right: 1.5em;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5em;
+  margin:1.8em 0;
+}
+
+.article-text {
+  padding: 1em;
+}
+
+.card {
+  background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.05));
+  margin-top: 1.5em;
+  margin: 0;
+}
+.job-seekers{
+  padding:2em;
+}
+.job-seekers button,.bubbles{
+  font-size:1.05em;
+  padding:0.9em;
+  border:#2D314E solid 2px;
+  color:#2D314E;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.932);
+  cursor: pointer;
+}
+.blog {
+  padding: 1em 2em;
+  margin: auto;
+  background-color: #FAFAFA;
+}
+.browse-jobs{
+  background-color:rgb(250, 250, 250);
+  padding:2em;
+}
+.search-by-skills,.search-by-location, .search-by-company{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:2em;
+}
+.bubbles{
+  margin-top:1em;
+}
+.bubbles:hover{
+  transform:translateY(-5px);
+  transition:ease-out 0.3s;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  box-sizing: border-box;
+  background-color: #2D314E;
+  color: white;
+  font-size: 0.875rem;
+  line-height: 1.5em;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media(max-width:600px) {
+  .home-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+    font-size: unset;
+  }
+  ul{
+    display: unset;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hidden-menu{
+    display: block;
+  }
+  .card {
+    margin-bottom: 2em;
+  }
+  .home {
+    background-position: bottom 2%;
+  }
+  input, button {
+    width: 100%;
+    margin-top: 0.8em;
+    font-size: 0.875em;
+    padding: 1em;
+  }
+  .request-button{
+    font-weight:bolder;
+    padding:1em;
+    font-size: 0.9em;
+
+  }
+  p {
+    line-height: 1.2em;
+  }
+  .job-card {
+    padding: 0.5em;
+    margin-top: 1em;
+  }
+  .jobs {
+    padding: 2rem;
+  }
+  .job-description {
+    display: inline-block;
+  }
+  .job-seekers{
+    text-align: center;
+  }
+  .articles {
+    display: block;
+    width: 100%;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .dropdown {
+    display: none;
+  }
+  .search-by-skills,.search-by-location, .search-by-company{
+    display:inline-block;
+    margin-top:2em;
+  }
+}
