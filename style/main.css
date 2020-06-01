@@ -233,9 +233,37 @@ input {
   height: 100vh;
   line-height: 3em;
 }
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
 
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.resume-upload{
+  display: flex;
+  justify-content: space-between;
+}
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  padding: 0;
+   width: 100%;
+   margin-top:0;
+}
 #employers {
-  background: linear-gradient(to right, rgba(30, 154, 255, 0.685), rgba(14, 28, 94, 0.452)), url('./images/employers.jpg');
+  background: linear-gradient(to right, rgba(30, 154, 255, 0.685), rgba(14, 28, 94, 0.452)), url('../images/employers.jpg');
   background-position: top;
   background-size: 100%;
   background-repeat: no-repeat;
